@@ -1,0 +1,7 @@
+print("\033[91m {}\033[00m".format("red"))
+print("\033[92m {}\033[00m".format("green"))
+print("\033[93m {}\033[00m".format("yellow"))
+print("\033[94m {}\033[00m".format("blue"))
+print("\033[95m {}\033[00m".format("purple"))
+print("\033[96m {}\033[00m".format("light blue"))
+print("\033[97m {}\033[00m".format("white"))
