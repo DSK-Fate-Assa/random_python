@@ -12,7 +12,7 @@ second  = int(input("What second were you born in \n"))
 complete_age = ""
 
 my_birthday = datetime(year, month, day, hour, minute, second) #year, month, day, hour, minutes, seconds
-
+age = datetime.now() - my_birthday
 
 def with_days(my_birthday):
     age = datetime.now() - my_birthday #you can subtract datetimes
@@ -20,14 +20,10 @@ def with_days(my_birthday):
     age_with_hours = (str(age).split()[2]).split(":")[0] + " hours, "
     age_with_minutes = (str(age).split()[2]).split(":")[1] + " minutes and "
     age_with_seconds = (str(age).split()[2]).split(":")[2] + " seconds"
-    
-    for i in range(age.year, datetime.now.year - age.year, -1)
-    
-    
+ 
     complete_age_wl = "You are " + age_with_years_and_days + age_with_hours + age_with_minutes + age_with_seconds+ " old \n" + "NOTE!! NOTE !! this is how many days you have lived for including days leap years !" 
     print(complete_age_wl)
-    complete_age = "You are " + age_with_years_and_days + age_with_hours + age_with_minutes + age_with_seconds+ " old \n" + "NOTE!! NOTE !! this is how many days you have lived for without including days leap years !" 
-
+    
 def with_time(my_birthday):
     age = datetime.now() - my_birthday
     age_with_hours = str(age).split(":")[0] + " hours, "
